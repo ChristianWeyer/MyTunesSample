@@ -14,6 +14,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{BB6A36
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTunes.BusinessLogic", "MyTunes.BusinessLogic\MyTunes.BusinessLogic.csproj", "{605BCBE6-9831-41A3-A110-1D5006DB8229}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{A4AFE536-33B8-41E6-8072-7D4E359F6FEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTunes.TestConsole", "MyTunes.TestConsole\MyTunes.TestConsole.csproj", "{BA573E59-50BF-4F7D-ABA6-479CBF8A5687}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTunes.BusinessLogic.Interfaces", "MyTunes.BusinessLogic.Interfaces\MyTunes.BusinessLogic.Interfaces.csproj", "{EFCC49D2-BEE7-447C-A091-33BB253CE53B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTunes.WindowsClient", "MyTunes.WindowsClient\MyTunes.WindowsClient.csproj", "{3D5C5826-A26D-499A-BB01-A6178385A5F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,8 +36,24 @@ Global
 		{605BCBE6-9831-41A3-A110-1D5006DB8229}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{605BCBE6-9831-41A3-A110-1D5006DB8229}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{605BCBE6-9831-41A3-A110-1D5006DB8229}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA573E59-50BF-4F7D-ABA6-479CBF8A5687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA573E59-50BF-4F7D-ABA6-479CBF8A5687}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA573E59-50BF-4F7D-ABA6-479CBF8A5687}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA573E59-50BF-4F7D-ABA6-479CBF8A5687}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFCC49D2-BEE7-447C-A091-33BB253CE53B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFCC49D2-BEE7-447C-A091-33BB253CE53B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFCC49D2-BEE7-447C-A091-33BB253CE53B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFCC49D2-BEE7-447C-A091-33BB253CE53B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D5C5826-A26D-499A-BB01-A6178385A5F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D5C5826-A26D-499A-BB01-A6178385A5F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D5C5826-A26D-499A-BB01-A6178385A5F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D5C5826-A26D-499A-BB01-A6178385A5F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BA573E59-50BF-4F7D-ABA6-479CBF8A5687} = {A4AFE536-33B8-41E6-8072-7D4E359F6FEA}
+		{3D5C5826-A26D-499A-BB01-A6178385A5F3} = {A4AFE536-33B8-41E6-8072-7D4E359F6FEA}
 	EndGlobalSection
 EndGlobal
