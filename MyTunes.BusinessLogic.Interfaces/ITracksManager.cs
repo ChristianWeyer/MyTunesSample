@@ -6,5 +6,7 @@ namespace MyTunes.BusinessLogic.Interfaces
     {
         List<TrackDto> ListTracks();
         TrackDetailsDto GetTrackDetails(int id);
+        TrackDetailsDto AddTrack(TrackDetailsDto trackDetailsDto);
+        void DeleteTrack(int trackId);
     }
 }

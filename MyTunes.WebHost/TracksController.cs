@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.Net;
 using System.Web.Http;
 using MyTunes.BusinessLogic;
 using MyTunes.BusinessLogic.Interfaces;
@@ -26,7 +25,31 @@ namespace MyTunes.WebHost
         // Get track details
         public TrackDetailsDto Get(int id)
         {
-            return tracksManager.GetTrackDetails(id);
+            try
+            {
+                var result = tracksManager.GetTrackDetails(id);
+
+                if (result == null)
+                {
+                    throw new HttpResponseException(HttpStatusCode.NotFound);
+                }
+
+                return result;
+            }
+            catch (NullReferenceException)
+            {
+                throw new HttpResponseException(HttpStatusCode.NotFound);
+            }
+        }
+
+        public TrackDetailsDto Post(TrackDetailsDto trackDetailsDto)
+        {
+            return tracksManager.AddTrack(trackDetailsDto);
+        }
+
+        public void Delete(int id)
+        {
+            tracksManager.DeleteTrack(id);
         }
     }
 }
