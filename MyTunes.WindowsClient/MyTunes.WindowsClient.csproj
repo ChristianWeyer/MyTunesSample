@@ -86,13 +86,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MyTunes.Bootstrapping\MyTunes.Bootstrapping.csproj">
+      <Project>{b38e002f-79b6-4d7b-b7d8-09c298f8c665}</Project>
+      <Name>MyTunes.Bootstrapping</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MyTunes.BusinessLogic.Interfaces\MyTunes.BusinessLogic.Interfaces.csproj">
       <Project>{efcc49d2-bee7-447c-a091-33bb253ce53b}</Project>
       <Name>MyTunes.BusinessLogic.Interfaces</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MyTunes.BusinessLogic\MyTunes.BusinessLogic.csproj">
-      <Project>{605bcbe6-9831-41a3-a110-1d5006db8229}</Project>
-      <Name>MyTunes.BusinessLogic</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
