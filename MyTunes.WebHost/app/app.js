@@ -1,4 +1,4 @@
-﻿var app = angular.module("myTunes", ["ngRoute", "angular-loading-bar"]);
+﻿var app = angular.module("myTunes", ["ngRoute", "ngTouch", "angular-loading-bar"]);
 
 app.baseUrl = "../";
 
