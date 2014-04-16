@@ -5,7 +5,7 @@ using System.Web.Http;
 using MyTunes.BusinessLogic;
 using MyTunes.BusinessLogic.Interfaces;
 
-namespace MyTunes.WebHost
+namespace MyTunes.Services
 {
     public class TracksController : ApiController
     {
