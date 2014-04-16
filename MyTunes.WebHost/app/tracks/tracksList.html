@@ -1,0 +1,16 @@
+﻿<div class="container">
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <td>Nummer</td>
+                <td>Titelname</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="track in tracks" ng-click="selectTrack(track)">
+                <td>{{ track.Id }} </td>
+                <td>{{ track.Name }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

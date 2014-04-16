@@ -95,7 +95,28 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\about\about.html" />
+    <Content Include="app\app.js" />
+    <Content Include="app\css\bootstrap-theme.css" />
+    <Content Include="app\css\bootstrap.css" />
+    <Content Include="app\css\loading-bar.css" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\index.html" />
+    <Content Include="app\js\angular-route.js" />
+    <Content Include="app\js\angular.js" />
+    <Content Include="app\js\bootstrap.js" />
+    <Content Include="app\js\jquery-2.1.0.js" />
+    <Content Include="app\js\loading-bar.js" />
+    <Content Include="app\logo.png" />
+    <Content Include="app\css\navbar-fixed-top.css" />
+    <Content Include="app\tracks\trackDetails.html" />
+    <Content Include="app\tracks\trackDetailsController.js" />
+    <Content Include="app\tracks\tracksList.html" />
+    <Content Include="app\tracks\tracksController.js" />
     <Content Include="packages.config" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\fonts\glyphicons-halflings-regular.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
