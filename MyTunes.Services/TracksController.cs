@@ -7,6 +7,9 @@ using MyTunes.BusinessLogic.Interfaces;
 
 namespace MyTunes.Services
 {
+    /// <summary>
+    /// Toller Kommentar!
+    /// </summary>
     public class TracksController : ApiController
     {
         private ITracksManager tracksManager;
