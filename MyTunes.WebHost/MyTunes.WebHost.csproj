@@ -106,6 +106,7 @@
     <Content Include="app\js\angular-touch.js" />
     <Content Include="app\js\angular.js" />
     <Content Include="app\js\bootstrap.js" />
+    <Content Include="app\js\fastclick.js" />
     <Content Include="app\js\jquery-2.1.0.js" />
     <Content Include="app\js\loading-bar.js" />
     <Content Include="app\logo.png" />

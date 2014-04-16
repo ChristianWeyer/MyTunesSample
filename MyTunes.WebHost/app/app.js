@@ -17,3 +17,7 @@ app.config(function ($routeProvider) {
         })
         .otherwise({ redirectTo: "/tracks" });
 });
+
+app.run(function() {
+    FastClick.attach(document.body);
+});
