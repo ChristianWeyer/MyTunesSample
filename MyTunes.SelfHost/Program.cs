@@ -11,7 +11,7 @@ namespace MyTunes.SelfHost
         {
             var a = Assembly.Load("MyTunes.Services");
 
-            using (var server = WebApp.Start<Startup>("http://localhost:7777/mytunes/"))
+            using (var server = WebApp.Start<SelfHostStartup>("http://localhost:7777/mytunes/"))
             {
                 Console.WriteLine("myTunes Server läuft...");
                 Console.ReadLine();
