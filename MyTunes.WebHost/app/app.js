@@ -1,5 +1,7 @@
 ﻿var app = angular.module("myTunes", ["ngRoute", "angular-loading-bar"]);
 
+app.baseUrl = "../";
+
 app.config(function ($routeProvider) {
     $routeProvider
         .when("/tracks", {

@@ -1,6 +1,6 @@
 ﻿app.controller("tracksController", function ($scope, $http, $location) {
 
-    $http.get("../tracks").then(function(result) {
+    $http.get(app.baseUrl + "tracks").then(function(result) {
         $scope.tracks = result.data;
     }, function(error) {
         alert(error);
