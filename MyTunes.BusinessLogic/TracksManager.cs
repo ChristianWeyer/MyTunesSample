@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using AutoMapper.QueryableExtensions;
 using MyTunes.BusinessLogic.Interfaces;
 using MyTunes.DataAccess;
 
@@ -11,17 +12,18 @@ namespace MyTunes.BusinessLogic
     /// </summary>
     public class TracksManager : ITracksManager
     {
+        public TracksManager()
+        {
+            // TODO: move into Bootstrapper...
+            DataMapper.Init();
+        }
+
         public List<TrackDto> ListTracks()
         {
             using (var db = new MyTunesDatabaseContext())
             {
                 // TODO: Remove hard-wired "paging"
-                var tracks = db.Tracks.Take(20).Select(
-                    t => new TrackDto
-                    {
-                        Id = t.TrackId,
-                        Name = t.Name
-                    }).ToList();
+                var tracks = db.Tracks.Take(20).Project().To<TrackDto>().ToList();
 
                 return tracks;
             }

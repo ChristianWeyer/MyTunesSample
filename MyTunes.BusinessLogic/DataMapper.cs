@@ -1,10 +1,20 @@
-﻿using MyTunes.BusinessLogic.Interfaces;
+﻿using AutoMapper;
+using MyTunes.BusinessLogic.Interfaces;
 using MyTunes.DataAccess;
 
 namespace MyTunes.BusinessLogic
 {
     public static class DataMapper
     {
+        public static void Init()
+        {
+            Mapper.CreateMap<Track, TrackDto>();
+            Mapper.CreateMap<TrackDto, Track>();
+
+            Mapper.CreateMap<TrackDetailsDto, Track>();
+            Mapper.CreateMap<Track, TrackDetailsDto>();
+        }
+
         public static TrackDetailsDto ToDetailsDto(this Track track)
         {
             return new TrackDetailsDto
