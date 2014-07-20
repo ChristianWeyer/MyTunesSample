@@ -1,7 +1,7 @@
-﻿using System;
-using System.Reflection;
-using Microsoft.Owin.Hosting;
+﻿using Microsoft.Owin.Hosting;
 using MyTunes.Hosting;
+using System;
+using System.Reflection;
 
 namespace MyTunes.SelfHost
 {

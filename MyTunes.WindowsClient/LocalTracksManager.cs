@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using System.IO;
-using MyTunes.Bootstrapping;
+﻿using MyTunes.Bootstrapping;
 using MyTunes.BusinessLogic.Interfaces;
 using Newtonsoft.Json;
+using System.Collections.Generic;
+using System.IO;
 
 namespace MyTunes.WindowsClient
 {

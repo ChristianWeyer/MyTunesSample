@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using AutoMapper.QueryableExtensions;
+﻿using AutoMapper.QueryableExtensions;
 using MyTunes.BusinessLogic.Interfaces;
 using MyTunes.DataAccess;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
 
 namespace MyTunes.BusinessLogic
 {

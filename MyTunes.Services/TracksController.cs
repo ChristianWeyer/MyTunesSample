@@ -1,9 +1,9 @@
-﻿using System;
+﻿using MyTunes.BusinessLogic;
+using MyTunes.BusinessLogic.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Web.Http;
-using MyTunes.BusinessLogic;
-using MyTunes.BusinessLogic.Interfaces;
 
 namespace MyTunes.Services
 {

@@ -1,10 +1,7 @@
-﻿using System;
+﻿using MyTunes.BusinessLogic.Interfaces;
+using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
-using MyTunes.BusinessLogic.Interfaces;
 
 namespace MyTunes.Client.Http
 {

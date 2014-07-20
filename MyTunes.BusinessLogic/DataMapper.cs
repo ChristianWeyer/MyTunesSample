@@ -8,7 +8,7 @@ namespace MyTunes.BusinessLogic
     {
         public static void Init()
         {
-            Mapper.CreateMap<Track, TrackDto>();
+            Mapper.CreateMap<Track, TrackDto>().ForMember(m=>m.Id, c=> c.MapFrom(s=> s.TrackId));
             Mapper.CreateMap<TrackDto, Track>();
 
             Mapper.CreateMap<TrackDetailsDto, Track>();
